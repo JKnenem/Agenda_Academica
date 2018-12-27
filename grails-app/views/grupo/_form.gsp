@@ -1,4 +1,4 @@
-<%@ page import="agendaAcademica.Grupo" %>
+<%@ page import="agenda_academica.Grupo" %>
 
 
 
