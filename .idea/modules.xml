@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Agenda_Academica.iml" filepath="$PROJECT_DIR$/Agenda_Academica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Agenda_Academica_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/Agenda_Academica_integrationTest.iml" group="Agenda_Academica" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Agenda_Academica_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Agenda_Academica_main.iml" group="Agenda_Academica" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Agenda_Academica_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Agenda_Academica_test.iml" group="Agenda_Academica" />
+    </modules>
+  </component>
+</project>
