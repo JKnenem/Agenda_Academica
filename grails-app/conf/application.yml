@@ -27,7 +27,7 @@ environments:
             dbCreate: update
             driverClassName: com.mysql.jdbc.Driver
             username: po6wbyfg9y6oba2u
-            password: udzlyyauo19m0qlb
+            password: 'udzlyyauo19m0qlb'
             url: mysql://po6wbyfg9y6oba2u:udzlyyauo19m0qlb@yhrz9vns005e0734.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/edfzem13y3lr2wr5
             properties:
                 jmxEnabled: true
