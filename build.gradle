@@ -72,6 +72,9 @@ assets {
     minifyJs = true
     minifyCss = true
 }
+// para alterar o nome padrao de geracao do arquivo WAR.
+war.archiveName="${war.baseName}.war"
+
 
 /*
     TRECHO ADICIONADO PARA O DEPLOY NO HEROKU
