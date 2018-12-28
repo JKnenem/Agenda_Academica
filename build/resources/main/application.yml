@@ -1,31 +1,34 @@
 ---
 hibernate:
+    dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     cache:
         queries: false
-        use_second_level_cache: true
+        use_second_level_cache: false
         use_query_cache: false
-        region.factory_class: 'org.hibernate.cache.ehcache.EhCacheRegionFactory'
-
 dataSource:
     pooled: true
     jmxExport: true
-    driverClassName: com.mysql.jdbc.Driver
-    username: root
-    password:
 
 environments:
     development:
         dataSource:
-            dbCreate: update
+            dbCreate: create-drop
             url: jdbc:mysql://localhost:3306/agenda_academica
+            driverClassName: com.mysql.jdbc.Driver
+            username: root
+            password: 
+
     test:
         dataSource:
             dbCreate: update
-            url: jdbc:mysql://localhost:3306/agenda_academica
+            url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     production:
         dataSource:
-            dbCreate: update
-            url: jdbc:mysql://localhost:3306/agenda_academica
+            dbCreate: create-drop
+            url: jdbc:h2:mem:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+            driverClassName: org.h2.Driver
+            username: sa
+            password: ''
             properties:
                 jmxEnabled: true
                 initialSize: 5
@@ -44,7 +47,6 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
-
 ---
 ---
 grails:
