@@ -1,5 +1,5 @@
 
-<%@ page import="agendaAcademica.Prova" %>
+<%@ page import="agenda_academica.Prova" %>
 <!DOCTYPE html>
 <html>
 	<head>
